@@ -3,39 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
   </head>
   
-  <body class="home">
-       
-    <%- include('partials/header.ejs') %>
+  <body class="weather">
     
-    <img src="/public/images/Labradoodle.jpeg" />
+    <%- include('partials/header.ejs') %>
+
+    <h1> jij en sammie zijn een match! ✨ </h1>
+
+    <figure> 
+      <img class="honden-afbeelding" src="public/images/Labradoodle.jpeg" alt="labra-doodle-hond" />
+      <img class="honden-afbeelding" src="public/images/corgi.jpeg" alt="corgi-hond"/>
+    </figure>
+
     <!--- https://www.nieuwehond.nl/labradoodle/ -->
     
-    <div class="naamblok">
-       <h1> SAMMIE </h1>
-       <p> 2-jarige Labra Doodle 
-           die graag buiten is!
-        </p>
-    </div>
-    <div class="like">
-      <button type="button">✖️</button>
-
-      <a href="matchpagina"> 
-      <button type="button">🐾</button>
-      </a>
-    </div>  
+    <button type="button"> Verstuur een chat naar Sammie </button>
+    <button type="button"> Verder kijken </button>
 
     <%- include('partials/footer.ejs') %>
 
-
     <script src="scripts/script.js"></script>
   </body>
-
 
 </html>

@@ -36,7 +36,7 @@ body header > img:nth-of-type(1) {
   border-radius: 0%;
 }
 
-body header + img {
+.home header + img {
   width: 15em;
   height: 15em;
   object-fit: cover;
@@ -76,7 +76,7 @@ p {
     font-size: 15px; 
 }
 
-button:nth-of-type(1) {
+.like button:first-of-type {
     background-color: var(--color-primair);
     width: 2.5em;
     height: 2.5em;
@@ -87,7 +87,7 @@ button:nth-of-type(1) {
     margin-left: 40px;
 }
 
-button:nth-of-type(2) {
+.like a button:last-of-type {
     background-color: var(--color-primair);
     width: 2.5em;
     height: 2.5em;
@@ -107,6 +107,69 @@ button:nth-of-type(2) {
     
 }
 
+
+/*******************/
+/* MATCHING PAGINA */
+/*******************/
+
+.match h1 {
+  color: var(--color-main-text);
+
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 3em;
+}
+
+figure {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.match img.honden-afbeelding {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 50%;
+
+  margin-top: 2em;
+}
+
+.match button:first-of-type {
+  background-color: var(--color-primair);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  width: 19em;
+  height: 2.5em;
+  border: none;
+  border-radius: .5em;
+
+  margin:0 auto;
+  margin-top:3em;
+  display:block;
+}
+
+.match button:last-of-type {
+  background-color: var(--color-primair);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  width: 10em;
+  height: 2.5em;
+  border: none;
+  border-radius: .5em;
+
+  margin:0 auto;
+  margin-top:1em;
+  display:block;
+}
+
+
 /**********/
 /* Footer */
 /**********/
@@ -123,23 +186,8 @@ footer {
     padding-bottom: 1em;
 }
 
-footer img {
+footer img.footer-afbeelding {
     width: 3em;
     height: auto;
 
-}
-
-/*******************/
-/* MATCHING PAGINA */
-/*******************/
-
-.match img:nth-of-type(3) {
-  width: 7em;
-  height: auto;
-
-  display: block;
-  margin-left: auto; /* centreren */
-  margin-right: auto;
-  margin-top: auto;
-  border-radius: 0%;
 }

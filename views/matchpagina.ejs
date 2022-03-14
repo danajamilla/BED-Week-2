@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Matchpagina</title>
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +13,22 @@
   <body class="match">
     
     <%- include('partials/header.ejs') %>
-    
-    <img src="./images/Labradoodle.jpeg" />
-    <img src="./images/corgi.jpeg" />
+
+    <h1> jij en sammie zijn een match! ✨ </h1>
+
+    <figure> 
+      <img class="honden-afbeelding" src="public/images/Labradoodle.jpeg" alt="labra-doodle-hond" />
+      <img class="honden-afbeelding" src="public/images/corgi.jpeg" alt="corgi-hond"/>
+    </figure>
 
     <!--- https://www.nieuwehond.nl/labradoodle/ -->
     
-    <div class="naamblok">
-       <h1> SAMMIE </h1>
-       <p> 2-jarige Labra Doodle 
-           die graag buiten is!
-        </p>
-    </div>
-    <div class="like">
-    <button type="button">✖️</button>
-    <button type="button">🐾</button>
-    </div>  
+    <button type="button"> Verstuur een chat naar Sammie </button>
+    <button type="button"> Verder kijken </button>
+
+    <%- include('partials/footer.ejs') %>
 
     <script src="scripts/script.js"></script>
   </body>
-  <%- include('partials/footer.ejs') %>
 
 </html>
