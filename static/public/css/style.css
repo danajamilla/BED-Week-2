@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-main-text: #383838;
+  --color-text: #ffffff;
+  --color-background: #F4F5F7;
+  --color-primair: #B8C6C6;
+  --color-secundair: #BF977D;
+  --color-highlight: #FCD552;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+header {
+    background-color: var(--color-primair);
+    width: auto;
+    height: 6em;
+}
+
+body header > img:nth-of-type(1) {
+  width: 7em;
+  height: auto;
+
+  display: block;
+  margin-left: auto; /* centreren */
+  margin-right: auto;
+  margin-top: auto;
+  border-radius: 0%;
+}
+
+body header + img {
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.naamblok {
+  background-color: var(--color-secundair);
+  width: 20em;
+  height: 6em;
+
+  border-radius: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2em;
+  padding: 1em;
+
+  position: relative;
+  z-index: 100;
+}
+
+h1 {
+    color: var(--color-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    color: var(--color-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; 
+}
+
+button:nth-of-type(1) {
+    background-color: var(--color-primair);
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 25px;
+
+    border: none;
+    border-radius: .5em;
+    margin-left: 40px;
+}
+
+button:nth-of-type(2) {
+    background-color: var(--color-primair);
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 25px;
+
+    border: none;
+    border-radius: .5em;
+    margin-right: 40px;
+}
+
+.like {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    margin-top: 2em;
+    
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    padding-bottom: 1em;
+}
+
+footer img {
+    width: 3em;
+    height: auto;
+
+}
+
+/*******************/
+/* MATCHING PAGINA */
+/*******************/
+
+.match img:nth-of-type(3) {
+  width: 7em;
+  height: auto;
+
+  display: block;
+  margin-left: auto; /* centreren */
+  margin-right: auto;
+  margin-top: auto;
+  border-radius: 0%;
+}
