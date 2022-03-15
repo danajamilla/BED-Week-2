@@ -29,3 +29,6 @@ npm start
 
 ## Database 📊
 De database heb ik nog niet aangemaakt. Door ziekte ben ik hier nog niet aan toegekomen, dit wordt later toegevoegd! 
+
+## License
+Ik heb de MIT License
