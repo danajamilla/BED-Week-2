@@ -27,3 +27,6 @@ Open de terminal en slep de map erin. Vervolgens run je de code: npm install
 
 3. **Start de server:**
 npm start
+
+## Database 📊
+De database heb ik nog niet aangemaakt. Door ziekte ben ik hier nog niet aan toegekomen, dit wordt later toegevoegd! 
