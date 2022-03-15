@@ -1,5 +1,4 @@
-![wiki-header](https://user-images.githubusercontent.com/94362031/158349207-2f33a036-3702-43eb-b769-9922efba6caf.png)
-
+<img width="1337" alt="wiki-header2" src="https://user-images.githubusercontent.com/94362031/158353977-daee6fce-3f17-4273-8d9e-778322a225d2.png">
 # PLAYDOGZ. 🐶
 Tijdens blok tech heb ik een concept bedacht en uitgewerkt. Als baasje van een huisdier wil je graag dat je dier zich vermaakt, niet alleen met jou maar ook met soortgenoten! Met Playdogz. kun je swipen tot je de perfecte playdate match hebt gevonden. Eenmaal een match kun je samen een chat starten om een playdate in te plannen. 
 
