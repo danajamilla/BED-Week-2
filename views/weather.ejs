@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="public/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  
+
   <body class="weather">
-    
     <%- include('partials/header.ejs') %>
+    <img class="sun"
+        src="public/images/sun.png"
+        alt="zon"
+      />
+    <h1>zonnig weer!</h1>
+    <p> Het is momenteel zonnig en warm:</p>
+    <h2> 22º</h2>
+    <p> Ga er dus vooral lekker met je playdate op uit!</p>
 
-    <h1> jij en sammie zijn een match! ✨ </h1>
-
-    <figure> 
-      <img class="honden-afbeelding" src="public/images/Labradoodle.jpeg" alt="labra-doodle-hond" />
-      <img class="honden-afbeelding" src="public/images/corgi.jpeg" alt="corgi-hond"/>
-    </figure>
-
-    <!--- https://www.nieuwehond.nl/labradoodle/ -->
-    
-    <button type="button"> Verstuur een chat naar Sammie </button>
-    <button type="button"> Verder kijken </button>
+    <a href="chatpagina">
+      <button type="button">Plan een playdate via de chat</button>
+    </a>
 
     <%- include('partials/footer.ejs') %>
 
-    <script src="scripts/script.js"></script>
+    <script src="../static/public/script/script.js"></script>
   </body>
-
 </html>

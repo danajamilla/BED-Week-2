@@ -5,30 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matchpagina</title>
     <link rel="stylesheet" href="public/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  
+
   <body class="match">
-    
     <%- include('partials/header.ejs') %>
 
-    <h1> jij en sammie zijn een match! ✨ </h1>
+    <h1>jij en sammie zijn een match! ✨</h1>
 
-    <figure> 
-      <img class="honden-afbeelding" src="public/images/Labradoodle.jpeg" alt="labra-doodle-hond" />
-      <img class="honden-afbeelding" src="public/images/corgi.jpeg" alt="corgi-hond"/>
+    <figure>
+      <img
+        class="honden-afbeelding"
+        src="public/images/Labradoodle.jpeg"
+        alt="labra-doodle-hond"
+      />
+      <!--- https://www.nieuwehond.nl/labradoodle/ -->
+      <img
+        class="honden-afbeelding"
+        src="public/images/corgi.jpeg"
+        alt="corgi-hond"
+      />
     </figure>
+    <a href="chatpagina">
+    <button type="button">Verstuur een chat naar Sammie</button>
+    </a>
 
-    <!--- https://www.nieuwehond.nl/labradoodle/ -->
-    
-    <button type="button"> Verstuur een chat naar Sammie </button>
-    <button type="button"> Verder kijken </button>
+    <a href="weather">
+    <button type="button">Bekijk het weer voor de ideale playdate</button>
+    </a>
 
     <%- include('partials/footer.ejs') %>
 
-    <script src="scripts/script.js"></script>
+    <script src="../static/public/script/script.js"></script>
   </body>
-
 </html>

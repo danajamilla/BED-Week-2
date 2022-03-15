@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="chat">
+    <%- include('partials/header.ejs') %>
+    <section> 
+        <img class="hond-chat" src="public/images/labradoodle.jpeg" alt="labra-doodle-hond"/>
+        <h1>Chat met Sammie</h1>
+     
+    </section>
+    <p>Online 🟢</p>
+    
+
+    <div class="chatblok-bruin">
+        <p> Hoi Sammie, zullen we een playdate inplannen? </p>
+    </div>
+
+    <div class="chatblok-groen">
+        <p> Hoi Lilo, ja dat lijkt mij leuk! Kun je vandaag om 15:00 uur? </p>
+    </div>
+
+    <div class="chatblok-bruin2">
+        <p> Dat is goed! </p>
+    </div>
+
+    <div class="chatblok-bruin3">
+        <p> Ik zie in de app dat het mooi weer wordt, 
+            zullen we naar het bos gaan? </p>
+    </div>
+
+    <div class="chatblok-groen2">
+        <p> Ja dat lijkt mij leuk! Tot vanmiddag :) </p>
+    </div>
+
+    <div class="chatblok-bruin4">
+        <p> Tot straks Sammie! </p>
+    </div>
+
+    <form>
+        <label for="message">Typ een bericht</label>
+        <input type="text" id="message" name="message">
+        <input type="submit" value="Verstuur">
+    </form>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script src="../static/public/script/script.js"></script>
+  </body>
+</html>

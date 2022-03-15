@@ -6,13 +6,17 @@
   padding: 0;
 }
 
+/******************/
+/* ALLE PAGINA'S  */
+/******************/
+
 :root {
   --color-main-text: #383838;
   --color-text: #ffffff;
-  --color-background: #F4F5F7;
-  --color-primair: #B8C6C6;
-  --color-secundair: #BF977D;
-  --color-highlight: #FCD552;
+  --color-background: #f4f5f7;
+  --color-primair: #b8c6c6;
+  --color-secundair: #bf977d;
+  --color-highlight: #fcd552;
 }
 
 body {
@@ -20,12 +24,20 @@ body {
 }
 
 header {
-    background-color: var(--color-primair);
-    width: auto;
-    height: 6em;
+  background-color: var(--color-primair);
+  width: auto;
+  height: 6em;
 }
 
-body header > img:nth-of-type(1) {
+a {
+  text-decoration: none;
+}
+
+/******************/
+/*   HOME PAGINA  */
+/******************/
+
+body header > a img:nth-of-type(1) {
   width: 7em;
   height: auto;
 
@@ -64,56 +76,58 @@ body header > img:nth-of-type(1) {
   z-index: 100;
 }
 
-h1 {
-    color: var(--color-text);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+.home .naamblok h1 {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+
+  text-align: center;
 }
 
-p {
-    color: var(--color-text);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px; 
-}
-
-.like button:first-of-type {
-    background-color: var(--color-primair);
-    width: 2.5em;
-    height: 2.5em;
-    font-size: 25px;
-
-    border: none;
-    border-radius: .5em;
-    margin-left: 40px;
-}
-
-.like a button:last-of-type {
-    background-color: var(--color-primair);
-    width: 2.5em;
-    height: 2.5em;
-    font-size: 25px;
-
-    border: none;
-    border-radius: .5em;
-    margin-right: 40px;
+.home .naamblok p {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  text-align: center;
 }
 
 .like {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-    margin-top: 2em;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 2em;
 }
 
+.like button:first-of-type {
+  background-color: var(--color-primair);
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 2em;
 
-/*******************/
-/* MATCHING PAGINA */
-/*******************/
+  border: none;
+  border-radius: 0.5em;
+  margin-left: 2em;
+}
+
+.like a button:last-of-type {
+  background-color: var(--color-primair);
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 2em;
+
+  border: none;
+  border-radius: 0.5em;
+  margin-right: 2em;
+}
+
+/*****************/
+/* MATCH PAGINA */
+/****************/
 
 .match h1 {
   color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
 
   text-align: center;
   font-size: 2em;
@@ -135,59 +149,252 @@ figure {
   margin-top: 2em;
 }
 
-.match button:first-of-type {
+.match a:first-of-type button:first-of-type {
   background-color: var(--color-primair);
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+
+  width: 19em;
+  height: 2.5em;
+  border: none;
+  border-radius: 0.5em;
+
+  margin: 0 auto;
+  margin-top: 3em;
+  display: block;
+}
+
+.match a:last-of-type button:last-of-type {
+  background-color: var(--color-primair);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+
+  width: 23em;
+  height: 2.5em;
+  border: none;
+  border-radius: 0.5em;
+
+  margin: 0 auto;
+  margin-top: 1em;
+  display: block;
+}
+
+/******************/
+/* WEATHER PAGINA */
+/******************/
+
+.weather img.sun {
+  width: 7em;
+  margin: 0 auto;
+  display: block;
+  margin-top:2em;
+}
+
+.weather h1 {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.weather h2 {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-top: .3em;
+}
+
+.weather p {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.weather button {
+  background-color: var(--color-primair);
+
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
 
   width: 19em;
   height: 2.5em;
   border: none;
-  border-radius: .5em;
+  border-radius: 0.5em;
 
-  margin:0 auto;
-  margin-top:3em;
-  display:block;
+  margin: 0 auto;
+  margin-top: 7em;
+  display: block;
 }
 
-.match button:last-of-type {
-  background-color: var(--color-primair);
+/***************/
+/* CHAT PAGINA */
+/***************/
 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+.chat img.hond-chat {
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius: 50%;
+
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.chat section:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  margin-top:-1em;
+}
+
+.chat section:first-of-type h1 {
+  color: var(--color-main-text);
+  font-family: "Montserrat", sans-serif;
+
+  margin-top: 2.2em;
+  padding-left: 1em;
+}
+
+.chat section:first-of-type + p {
+  color: var(--color-main-text);  
+  font-family: "Montserrat", sans-serif;
+
+  margin-left: 7.6em;
+  margin-top: -2em;
+}
+
+.chat .chatblok-bruin,        /* algemene css chatblokken bruin */
+.chat .chatblok-bruin2,
+.chat .chatblok-bruin3,
+.chat .chatblok-bruin4 { 
+  background-color: var(--color-secundair);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+
+  width: 20em;
+  border: none;
+  border-radius: 0.5em;
+  padding: .8em;
+
+  margin-left: 3.5em;
+  display: block;
+}
+
+.chat div.chatblok-groen,       /* algemene css chatblokken groen */
+.chat div.chatblok-groen2 {          
+  background-color: var(--color-primair);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+
+  width: 20em;
+  border: none;
+  border-radius: 0.5em;
+  padding: .8em;
+
+  margin-left: 1em;
+  display: block;
+}
+
+/****** chatblok bruin ******/
+.chat .chatblok-bruin {
+  margin-top: 2em;
+  height: 4em;
+}
+
+.chat .chatblok-bruin2 {
+  margin-top: 1em;
+  height: 2.8em;
+}
+
+.chat .chatblok-bruin3 {
+  margin-top: 1em;
+  height: 4em;
+}
+
+.chat .chatblok-bruin4 {
+  margin-top: 1em;
+  height: 2.8em;
+}
+
+/****** chatblok groen ******/
+.chat .chatblok-groen {
+  margin-top: 1em;
+  height: 4em;
+}
+
+.chat .chatblok-groen2 {
+  margin-top: 1em;
+  height: 2.5em;
+}
+
+/*********************/
+/* CHATPAGINA > FORM */
+/*********************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-left: 1em;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+form input:first-of-type {
+  font-family: "Montserrat", sans-serif;
+  width: 23em;
+  height: 2em;
+  border: solid .1em var(--color-secundair);
+  border-radius: .4em;
+
+  margin-top:.2em;
+  padding:.5em;
+}
+
+form input:last-of-type {
+  background-color: var(--color-primair);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
   font-weight: 600;
 
-  width: 10em;
-  height: 2.5em;
+  width: 6em;
+  height: 2em;
+  border-radius: .4em;
   border: none;
-  border-radius: .5em;
 
-  margin:0 auto;
-  margin-top:1em;
-  display:block;
+  margin-top:.5em;
+  padding:.5em;
 }
 
-
 /**********/
-/* Footer */
+/* FOOTER */
 /**********/
 
 footer {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-    position: fixed;
-    left:0;
-    right:0;
-    bottom: 0;
-    padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 1em;
 }
 
 footer img.footer-afbeelding {
-    width: 3em;
-    height: auto;
-
+  width: 3em;
+  height: auto;
 }
