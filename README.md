@@ -12,10 +12,10 @@ In mijn wiki kun je meer vinden over mijn proces en het concept!
 ## Installaties 🛠️
 Wanneer je mijn app wilt installeren, heb je een aantal dingen nodig. 
 
-• Node.js
-• Npm
-• Express
-• Ejs
+1. Node.js
+2. Npm
+3. Express
+4. Ejs
 
 ## App installeren 
 1. **Maak een clone van mijn repository:**
