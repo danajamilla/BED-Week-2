@@ -21,6 +21,7 @@
 
 body {
   background-color: var(--color-background);
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -38,17 +39,19 @@ a {
 /******************/
 
 body header > a img:nth-of-type(1) {
+  /* logo */
   width: 7em;
   height: auto;
 
   display: block;
-  margin-left: auto; /* centreren */
+  margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   border-radius: 0%;
 }
 
 .home header + img {
+  /* hond */
   width: 15em;
   height: 15em;
   object-fit: cover;
@@ -72,21 +75,21 @@ body header > a img:nth-of-type(1) {
   margin-top: -2em;
   padding: 1em;
 
-  position: relative;
+  position: relative; /* blok komt boven de img */
   z-index: 100;
 }
 
-.home .naamblok h1 {
+.home .naamblok p:nth-of-type(1) {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
+  font-weight: 600;
 
+  text-transform: uppercase;
   text-align: center;
 }
 
-.home .naamblok p {
+.home .naamblok p:nth-of-type(2) {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   text-align: center;
 }
@@ -127,7 +130,6 @@ body header > a img:nth-of-type(1) {
 
 .match h1 {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
 
   text-align: center;
   font-size: 2em;
@@ -151,8 +153,6 @@ figure {
 
 .match a:first-of-type button:first-of-type {
   background-color: var(--color-primair);
-
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 600;
 
@@ -168,8 +168,6 @@ figure {
 
 .match a:last-of-type button:last-of-type {
   background-color: var(--color-primair);
-
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 600;
 
@@ -191,12 +189,11 @@ figure {
   width: 7em;
   margin: 0 auto;
   display: block;
-  margin-top:2em;
+  margin-top: 2em;
 }
 
 .weather h1 {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
@@ -205,16 +202,14 @@ figure {
 
 .weather h2 {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 4em;
   text-transform: uppercase;
-  margin-top: .3em;
+  margin-top: 0.3em;
 }
 
 .weather p {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
 
   text-align: center;
   font-size: 1em;
@@ -223,8 +218,6 @@ figure {
 
 .weather button {
   background-color: var(--color-primair);
-
-  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
 
@@ -255,52 +248,50 @@ figure {
 .chat section:first-of-type {
   display: flex;
   align-items: flex-start;
-  margin-top:-1em;
+  margin-top: -1em;
 }
 
 .chat section:first-of-type h1 {
   color: var(--color-main-text);
-  font-family: "Montserrat", sans-serif;
 
   margin-top: 2.2em;
   padding-left: 1em;
 }
 
 .chat section:first-of-type + p {
-  color: var(--color-main-text);  
-  font-family: "Montserrat", sans-serif;
+  color: var(--color-main-text);
 
   margin-left: 7.6em;
   margin-top: -2em;
 }
 
-.chat .chatblok-bruin,        /* algemene css chatblokken bruin */
+/****** algemene css chatblokken bruin ******/
+.chat .chatblok-bruin,
 .chat .chatblok-bruin2,
 .chat .chatblok-bruin3,
-.chat .chatblok-bruin4 { 
+.chat .chatblok-bruin4 {
   background-color: var(--color-secundair);
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
 
   width: 20em;
   border: none;
   border-radius: 0.5em;
-  padding: .8em;
+  padding: 0.8em;
 
   margin-left: 3.5em;
   display: block;
 }
 
-.chat div.chatblok-groen,       /* algemene css chatblokken groen */
-.chat div.chatblok-groen2 {          
+/****** algemene css chatblokken groen ******/
+.chat div.chatblok-groen,
+.chat div.chatblok-groen2 {
   background-color: var(--color-primair);
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
 
   width: 20em;
   border: none;
   border-radius: 0.5em;
-  padding: .8em;
+  padding: 0.8em;
 
   margin-left: 1em;
   display: block;
@@ -348,34 +339,30 @@ form {
   align-items: center;
   margin-top: 2em;
   margin-left: 1em;
-
-  font-family: "Montserrat", sans-serif;
 }
 
 form input:first-of-type {
-  font-family: "Montserrat", sans-serif;
   width: 23em;
   height: 2em;
-  border: solid .1em var(--color-secundair);
-  border-radius: .4em;
+  border: solid 0.1em var(--color-secundair);
+  border-radius: 0.4em;
 
-  margin-top:.2em;
-  padding:.5em;
+  margin-top: 0.2em;
+  padding: 0.5em;
 }
 
 form input:last-of-type {
   background-color: var(--color-primair);
-  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 600;
 
   width: 6em;
   height: 2em;
-  border-radius: .4em;
+  border-radius: 0.4em;
   border: none;
 
-  margin-top:.5em;
-  padding:.5em;
+  margin-top: 0.5em;
+  padding: 0.5em;
 }
 
 /**********/
