@@ -22,10 +22,10 @@ Wanneer je mijn app wilt installeren, heb je een aantal dingen nodig.
 git clone https://github.com/samanthavz/project-tech.git
 
 2. **Install NPM:**
-Open de terminal en slep de map erin. Vervolgens run je de code: npm install
+Open de terminal en slep de map erin. Vervolgens run je de code: `npm install`
 
 3. **Start de server:**
-npm start
+`npm start`
 
 ## Database 📊
 De database heb ik nog niet aangemaakt. Door ziekte ben ik hier nog niet aan toegekomen, dit wordt later toegevoegd! 
